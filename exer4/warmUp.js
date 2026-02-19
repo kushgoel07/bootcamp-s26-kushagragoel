@@ -16,7 +16,17 @@
  * F = anything < 60
  */
 function toLetterGrade(numGrade) {
-  // TODO
+  if (90 <= numGrade <= 100) {
+    return "A";
+  } else if (80 <= numGrade < 90) {
+    return "B";
+  } else if (70 <= numGrade < 80) {
+    return "C";
+  } else if (60 <= numGrade < 70) {
+    return "D";
+  } else {
+    return "F";
+  }
 }
 
 /**
@@ -27,7 +37,13 @@ function toLetterGrade(numGrade) {
  * Example: [9, 3, 4, 1, 2, 0] --> [4, 2, 0]
  */
 function getEvenElements(array) {
-  // TODO
+  even = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2== 0) {
+      even.push(array[i]);
+    }
+  }
+  return even;
 }
 
 /**
@@ -40,33 +56,42 @@ function getEvenElements(array) {
  * Example: "I love Bits of Good" --> 4
  */
 function findLongestWord(string) {
-  // TODO
+  let words = string.split();
+  let longest = words[0];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+      longest = words[i];
+    }
+  }
+
+  return longest.length;
 }
 
-/**
- * Task 4: Create a function that takes in 2 objects and return an object that 
- * is the combination of the 2
- *
- * Example:
-    {
-        name: "Casey",
-        age: 10
-    }
-    {
-        breed: "Pomeranian",
-        friendly: false
-    }
-    -->
-    {
-        name: "Casey",
-        age: 10,
-        breed: "Pomeranian",
-        friendly: false
-    } 
- */
-function combineObjects(object1, object2) {
-  // TODO
-}
+  /**
+   * Task 4: Create a function that takes in 2 objects and return an object that 
+   * is the combination of the 2
+   *
+   * Example:
+      {
+          name: "Casey",
+          age: 10
+      }
+      {
+          breed: "Pomeranian",
+          friendly: false
+      }
+      -->
+      {
+          name: "Casey",
+          age: 10,
+          breed: "Pomeranian",
+          friendly: false
+      } 
+  */
+  function combineObjects(object1, object2) {
+    let combined = Object.assign({}, object1, object2);
+    return combined;
+  }
 
 /**
  *  Task 5: Create a function that takes an array as an argument and returns
@@ -77,7 +102,16 @@ function combineObjects(object1, object2) {
  *  Example: [1, 2, 3] -> [3, 2, 1]
  */
 function reverseArr(array) {
-  // TODO
+  let l = 0
+  let r = array.length - 1;
+  while ( l < r) {
+    let temp = array[l];
+    array[l] = array[r];
+    array[r] = temp;
+    l++;
+    r--;
+  }
+  return array;
 }
 
 // DO NOT EDIT BELOW THIS LINE -- the code is for testing purposes only!
