@@ -1,0 +1,25 @@
+.typeTitle {
+    font-size: 1cqi;
+
+    margin-bottom:0;
+}
+
+.typelistContainer {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    width: 20svw;
+}
+.typeNames {
+    background-color: #a8a97b;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    border-radius: .5454vw; 
+    font-size: .8vw;
+    padding: .1818vw .727vw;
+    margin-right:1vw;
+}
+

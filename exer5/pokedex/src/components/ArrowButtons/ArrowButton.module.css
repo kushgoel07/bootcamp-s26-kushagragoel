@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw; 
+    margin-top: 2vh;
+
+    width: 20svw;
+    gap: 2vw;
+}
+
+img {
+    width: 5.9vh;
+    aspect-ratio: 1/1;
+    opacity: 1;
+}
+
+.leftButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;  
+    height: 6.738vh;      
+    border-radius: 10px;  
+    background-color: #E8E8E8;
+    margin-left: 1vw;
+    border: none;
+}
+
+.rightButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    width: 8vw;  
+    height: 6.738vh;    
+    border: none;
+}
+
+
+.rightArrow {
+    transform: scaleX(-1)
+}

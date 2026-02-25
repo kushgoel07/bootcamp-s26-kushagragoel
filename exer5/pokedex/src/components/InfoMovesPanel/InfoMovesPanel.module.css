@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10vw;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.title {
+    width:20vw;
+    margin-top: -2vh;
+    text-align: center;
+
+}
+
+.text {
+    margin-top: .1vh;
+    width: 20vw;
+    height: 58vh;
+    background-color: #E8E8E8;
+    padding-top: 1vw;
+    
+}
+.buttons{
+    width: 20vw;
+    display:flex;
+    justify-content: center;
+    margin-top: 4vw;
+    gap: 2.9vw;
+}
+
+.InfoButton{
+    width: 8vw;  
+    height: 6.738vh;   
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5cqi;
+
+}
+
+.MovesButton {
+    width: 8vw;  
+    height: 6.738vh;   
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5cqi;
+
+}
+
+.active {
+  background-color:#7CFF79;
+}
+
+.statLine {
+    margin: 0;
+    margin-left: 1vw;  
+    font-size: 1.5cqi
+}
